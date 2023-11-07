@@ -1,0 +1,6 @@
+numpy
+scipy
+jieba
+pkuseg
+paddlepaddle-tiny==1.6.1
+protobuf==3.20.*
