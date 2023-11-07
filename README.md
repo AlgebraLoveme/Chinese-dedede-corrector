@@ -22,6 +22,7 @@ This code applies pkuseg to annotate the sentences and use rule-based conditions
 However, this tool relies on manually designed rules, thus requires further support for the community to make more fine-grained rules.
 
 --- Chinese version below ---
+
 此工具的原理是使用词性标注工具来逐句标定``的''的前后词词性，并以此为基础判定用法是否错误及修复。默认的标注引擎为pkuseg，但也支持使用jieba引擎。由于词性标注引擎并不能做到没有错误，因此有时此工具也会做出错误的判断。尽管如此，此工具使用了更保守的修复策略，尽可能降低错报概率；也正因为如此，有一定可能无法识别到错误用法。
 
 由于经过观察，``的``最常用且绝大多数错误都为误将``地得``写为``的``，因此本工具只检测``的``是否为误用。
